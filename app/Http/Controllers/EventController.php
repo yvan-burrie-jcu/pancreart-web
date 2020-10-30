@@ -23,7 +23,27 @@ class EventController extends Controller {
     public function createEvent(Request $request) {
         $event = Event::create($request->all());
 
+        /**returns a response as json*/
+
         return response()->json($event);
 
     }
+
+    public function updateEvent(Request $request, $id) {
+        /**TODO update database by getting requests with
+         *userId
+         *time
+         *amount
+         *eventType -- TYPE_GLUCOSE_READING = 0 OR TYPE_INSULIN_INJECTION = 1
+         *
+         *  to determine user() ---> return $this->belongsTo('App\User', 'user_id', 'id');
+         **/
+     }
+
+     public function index() {
+
+        $event = Event::all();
+
+        return response()->json($response);
+     }
 }
