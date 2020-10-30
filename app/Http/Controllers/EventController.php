@@ -41,7 +41,7 @@ class EventController extends Controller {
      }
 
      public function index() {
-
+        /**TODO Get response from DB + JSON PARSER CLASS
         $event = Event::all();
 
         return response()->json($response);
