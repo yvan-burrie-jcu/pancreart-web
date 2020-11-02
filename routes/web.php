@@ -14,7 +14,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/github-hook', function (Request $request)
 {
-    // Only to be used by server and not local machine
+    // Only to be used by server and not local machine.
     system('cd ~');
     system('cd /var/www/html');
     system('sudo git pull --force');
