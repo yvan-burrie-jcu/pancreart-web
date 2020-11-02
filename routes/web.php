@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 Route::get('/', function ()
 {
@@ -11,7 +12,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/github-hook', function ()
+Route::post('/github-hook', function (Request $request)
 {
     system('cd ~');
     system('cd /var/www/html');
