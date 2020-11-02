@@ -20,6 +20,7 @@ Route::post('/github-hook', function (Request $request)
     system('sudo git pull --force');
     system('sudo composer install');
     system('sudo npm run dev');
+    system('php artisan migrate');
 
     response();
 });
