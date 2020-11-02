@@ -4,12 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Pancreart</title>
+        <title>PancreArt - Artificial Pancreas</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-
 
         <!-- Styles -->
         <style>
