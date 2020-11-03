@@ -12,6 +12,8 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        'github-hook'
+        'api/login',
+        'api/logout',
+        'github-hook',
     ];
 }
